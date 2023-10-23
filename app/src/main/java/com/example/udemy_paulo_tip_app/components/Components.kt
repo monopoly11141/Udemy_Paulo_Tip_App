@@ -1,5 +1,6 @@
 package com.example.udemy_paulo_tip_app.components
 
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -39,7 +40,8 @@ fun InputField(
                 start = 10.dp,
                 end = 10.dp,
                 bottom = 10.dp
-            ),
+            )
+            .fillMaxWidth(),
         label = {
             Text(text = labelId)
         },
